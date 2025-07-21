@@ -117,8 +117,8 @@ function observeCards() {
 // add keyboard navigation support
 document.addEventListener('keydown', function(e) {
     if (e.altKey) {
-        const tabs = ['profile', 'education', 'projects', 'work', 'contact'];
-        const numbers = ['1', '2', '3', '4', '5'];
+        const tabs = ['profile', 'education', 'projects', 'work', 'certifications', 'contact'];
+        const numbers = ['1', '2', '3', '4', '5', '6'];
 
         const index = numbers.indexOf(e.key);
         if (index !== -1 && tabs[index]) {
