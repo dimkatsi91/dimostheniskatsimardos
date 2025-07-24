@@ -151,3 +151,19 @@ function scrollToTop() {
         behavior: 'smooth'
     });
 }
+
+function downloadCV() {
+    // temporary anchor element
+    const link = document.createElement('a');
+
+    // set the path to your PDF file
+    link.href = 'assets/cv.pdf';
+
+    link.download = 'cv.pdf';
+
+    document.body.appendChild(link);
+
+    link.click();
+
+    document.body.removeChild(link);
+}
