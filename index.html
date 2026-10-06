@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <meta property="og:title" content="Dimosthenis Katsimardos - CV">
+    <meta property="og:description" content="Site Reliability Engineer & DevOps Specialist">
+    <meta property="og:title" content="https://dimkatsi91.github.io/dimostheniskatsimardos/">
+</head>
+
+<body>
+    <header>
+        <h1>Dimosthenis Katsimardos</h1>
+        <p>Site Reliability Engineer & DevOps Specialist</p>
+        <div class="header-actions">
+            <button class="action-btn" onclick="downloadCV()" title="Download CV">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" style="vertical-align:middle; margin-right:6px;" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M.5 9.9V14a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V9.9a.5.5 0 0 0-1 0V14H1V9.9a.5.5 0 0 0-1 0z"/>
+                    <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+                </svg>
+                Download CV
+            </button>
+        </div>
+    </header>
+
+    <nav class="tab-nav">
+        <button class="tab-button active" onclick="showTab('profile')">Profile</button>
+        <button class="tab-button" onclick="showTab('education')">Education</button>
+        <button class="tab-button" onclick="showTab('projects')">Projects</button>
+        <button class="tab-button" onclick="showTab('work')">Work Experience</button>
+        <button class="tab-button" onclick="showTab('certifications')">Certifications</button>
+        <button class="tab-button" onclick="showTab('contact')">Contact</button>
+        <button class="tab-button" onclick="toggleDarkMode()" title="Toggle Dark Mode">🌙</button>
+    </nav>
+
+    <main class="content">
+        <section id="profile" class="tab-content active">
+            <h2>Profile</h2>
+            <p>Site Reliability Engineer with over 7 years of experience designing, maintaining, and scaling cloud-native infrastructure. Proven track record in CI/CD automation, chaos engineering, and leading Internal Developer Platform initiatives.</p>
+            <div class="skills-section">
+                <h3>Skills</h3>
+                <div class="skills-grid">
+                <span class="skill-tag">Site Reliability Engineering</span>
+                <span class="skill-tag">DevOps & CI/CD</span>
+                <span class="skill-tag">Chaos Engineering</span>
+                <span class="skill-tag">Kubernetes & Docker</span>
+                <span class="skill-tag">Go, Python, C++</span>
+                <span class="skill-tag">GitOps & Infrastructure as Code</span>
+                <span class="skill-tag">Monitoring & Observability</span>
+                <span class="skill-tag">Cloud Platforms (AWS, GCP)</span>
+                <span class="skill-tag">Terraform & Helm</span>
+                <span class="skill-tag">GitLab CI/CD</span>
+                <span class="skill-tag">ArgoCD</span>
+            </div>
+        </section>
+
+        <section id="education" class="tab-content">
+            <h2>Education</h2>
+            <div class="card">
+                <h3>Master of Science (MS) in Artificial Intelligence</h3>
+                <h4>European University Cyprus, Nicosia</h4>
+                <p class="date">October 2025 - Current (expected end of 2027)</p>
+                <p>Master of Science in Artificial Intelligence</p>
+            </div>
+            <div class="card">
+                <h3>Master of Science (MSc) in Electronics & Information Processing</h3>
+                <h4>University of Patras, Patras</h4>
+                <p class="date">October 2015 - June 2017</p>
+                <p>MSc Thesis Title: "Design and implementation of a digital processing system for QR bar-codes (ISO/IEC 18004)"</p>
+            </div>
+            <div class="card">
+                <h3>Bachelor of Science (BSc) in Physics</h3>
+                <h4>University of Patras, Patras</h4>
+                <p class="date">October 2009 - June 2015</p>
+                <p>Major in Electronics, Computers & Signal Processing</p>
+                <p>BSc Thesis Title: "Eye-Trackers, Saliency maps and their applications in Signature's Recognition"</p>
+            </div>
+        </section>
+
+    <section id="projects" class="tab-content">
+        <h2>Projects</h2>
+            <div class="card">
+                <h3>Qt Quick Controls 2 Linux Desktop Application</h3>
+                <p class="date">2020/01 - 2020/02</p>
+                <p>
+                This is a Qt Quick Controls Application. 
+                The Application's front end is designed using QML (Qt Modeling Language) and the backend functionality for functionality as user creation/removal, 
+                group creation/removal/rename or IPv4/IPv6 Firewall configuration is handled by c++ code.
+                This project is developed using Qt 5.14.0 Open Source Community Edition, under environment (IDE) Qt Creator 5.14.0 Open Source Community Edition. 
+                </p>
+                <div class="technologies">
+                    <span class="tech-tag">Linux</span>
+                    <span class="tech-tag">Qt</span>
+                    <span class="tech-tag">C++</span>
+                    <span class="tech-tag">QML</span>
+                </div>
+                <a href="https://github.com/dimkatsi91/Manager_v2/blob/master/README.md" target="_blank" class="project-link">View Project</a>
+            </div>
+            <div class="card">
+                <h3>Test Automation (CI/CD) via Jenkins and Python</h3>
+                <h4>Intracom-Telecom S.A.</h4>
+                <p class="date">2019/11 - 2020/01</p>
+                <p>
+                This is a project regarding various testing procedures that take place before the release of the product 'IP Load Balancer in Virtualization'. 
+                These procedures include proxy installation/upgrade, binaries installation/upgrade and all documented test cases that should be conducted in order to verify correct behavior of IPLB in Virtualization Software. 
+                Essentially, a lot of Python scripts (through a Gerrit repository) have been put in the Server that Jenkins user uses to run its jobs. 
+                Various downstream Jenkins jobs have been created that perform appropriate scenarios, since every one of these testing procedures needs to be executed as a standalone testing procedure from day to day. 
+                Also, an Upstream Jenkins job has been created that uses Downstream jobs and other actions for the whole CI/CD verification of IPLB Software. 
+                The developed Python scripts use the well known 'paramiko' module which automates ssh connections towards a server and sftp actions too through transport and sftp channels for 'put' and 'get' actions automation.
+                </p>
+                <div class="technologies">
+                    <span class="tech-tag">Linux</span>
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Shell Scripting</span>
+                    <span class="tech-tag">Jenkins CI/CD</span>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Design & Implementation of a digital processing system for QR bar-codes (ISO/IEC 18004)</h3>
+                <h4>University of Patras</h4>
+                <p class="date">2016 - 2017</p>
+                <p>
+                The purpose of this master thesis was the study, design and implementation of a digital processing system for QR bar-codes decoding based on Denso Wave's standard ISO/IEC 18004. 
+                The QR bar-code decoder essentially is an R-S decoder, meaning a Reed-Solomon decoder with the ability of error correction based on R-S error-correction techniques, as they are presented in the previously mentioned standard of Denso Wave company. 
+                The code for QR bar-codes was designed and implemented using C++ (OOP) and the overall system was implemented in a Raspberry Pi 3 platform that was controlled through a GUI using TKinter, Python's standard library for GUI development.
+                </p>
+                <div class="technologies">
+                    <span class="tech-tag">Linux</span>
+                    <span class="tech-tag">C++</span>
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Git</span>
+                    <span class="tech-tag">Object Oriented Programming</span>
+                    <span class="tech-tag">Cryptography</span>
+                </div>
+                <a href="https://nemertes.library.upatras.gr/items/7b449b77-ad92-45ab-b038-6224f4b80d8b" target="_blank" class="project-link">View Project in UoP</a>
+                <a href="https://dimkatsi91.github.io/Master-Thesis/" target="_blank" class="project-link">View Project in Github</a>
+            </div>
+    </section>
+
+    <section id="work" class="tab-content">
+        <h2>Work Experience</h2>
+            <div class="card">
+                <h3>Site Reliability Engineer</h3>
+                <h4>Kaizen Gaming, Athens</h4>
+                <p class="date">May 2023 - PRESENT</p>
+                <ul>
+                    <li>Spearheaded the onboarding of microservices in OpenShift utilizing GitLab CI/CD and ArgoCD.</li>
+                    <li>Designed and implemented a company-wide Chaos Engineering platform (Steadybit) to improve system resilience.</li>
+                    <li>Participated in Internal Developer Platform (Cortex) initiatives to streamline developer workflows across the Enterprise Architecture tribe.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>DevOps Engineer</h3>
+                <h4>Agile Actors, Athens</h4>
+                <p class="date">November 2021 - April 2023</p>
+                <ul>
+                    <li>Supported developers in designing and maintaining GitLab CI/CD pipelines for GfK's Client Platform team.</li>
+                    <li>Deployed microservices to GCP using Kubernetes and Helm templates.</li>
+                    <li>Provisioned and updated cloud infrastructure using Terraform.</li>
+                    <li>Maintained robust monitoring and alerting through Prometheus, Grafana, and custom Alert Rules.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Cloud Integration Engineer</h3>
+                <h4>Intracom-Telecom S.A, Patras</h4>
+                <p class="date">June 2020 - October 2021</p>
+                <ul>
+                    <li>Managed the installation of 4G and 5G telecom nodes on RHOSP (RedHat OpenStack Platform) for virtualized software.</li>
+                    <li>Deployed containerized software on AWS leveraging Kubernetes, Helm, Python, and Ansible.</li>
+                    <li>Collaborated remotely as an external partner with a multicultural Ericsson team.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Software Developer</h3>
+                <h4>Intracom-Telecom S.A, Patras</h4>
+                <p class="date">November 2018 - June 2020</p>
+                <ul>
+                    <li>Designed and maintained low-level C++ code for 3G telecom nodes running on bare metal and virtualized RHOSP environments.</li>
+                    <li>Developed Bash and Python scripts to streamline system design, testing, and automation processes.</li>
+                    <li>Configured Jenkins pipelines to automate testing workflows within an agile team environment.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>University of Patras - Computer Programming II Lab Assistant</h3>
+                <h4>Patras, Greece</h4>
+                <p class="date">2017/03 - 2017/06</p>
+                <p>Assistant in Programming Lab II, University of Patras, Physics Department.</p>
+                <div class="technologies">
+                    <span class="tech-tag">C++</span>
+                    <span class="tech-tag">Object Oriented Programming</span>
+                </div>
+            </div>
+            <div class="card">
+                <h3>University of Patras - Digital Electronics Laboratory Assistant</h3>
+                <h4>Patras, Greece</h4>
+                <p class="date">2017/03 - 2017/06</p>
+                <p>Assistant in Digital Electronics Laboratory, University of Patras, Physics Department, Division of Electronics & Computers.</p>
+                <div class="technologies">
+                    <span class="tech-tag">Digital Circuit Design</span>
+                    <span class="tech-tag">VHDL</span>
+                    <span class="tech-tag">Digital Electronics</span>
+                </div>
+            </div>
+            <div class="card">
+                <h3>University of Patras - Computer Programming I Lab Assistant</h3>
+                <h4>Patras, Greece</h4>
+                <p class="date">2016/10 - 2017/01</p>
+                <p>Assistant in Programming Lab I, University of Patras, Physics Department.</p>
+                <div class="technologies">
+                    <span class="tech-tag">Fortran</span>
+                    <span class="tech-tag">C++</span>
+                </div>
+            </div>
+    </section>
+
+    <section id="certifications" class="tab-content">
+        <h2>Certifications</h2>
+            <div class="card">
+                <h3>CAPA: Certified Argo Project Associate</h3>
+                <h4>The Linux Foundation</h4>
+                <p class="date">Issued May 2025 - Expires May 2027</p>
+                <a href="https://www.credly.com/badges/3d31cb58-bb07-426b-bd85-3e355a5d7349" target="_blank" class="project-link">View Certificate</a>
+            </div>
+            <div class="card">
+                <h3>CKA: Certified Kubernetes Administrator</h3>
+                <h4>The Linux Foundation</h4>
+                <p class="date">Issued November 2023 - Expires November 2026</p>
+                <a href="https://www.credly.com/badges/3d31cb58-bb07-426b-bd85-3e355a5d7349" target="_blank" class="project-link">View Certificate</a>
+            </div>
+            <div class="card">
+                <h3>LFS256: DevOps and Workflow Management with Argo</h3>
+                <h4>The Linux Foundation</h4>
+                <p class="date">Issued December 2024</p>
+                <a href="https://www.credly.com/badges/118bde41-d941-40ac-9ac8-da6ec6759732" target="_blank" class="project-link">View Certificate</a>
+            </div>
+            <div class="card">
+                <h3>LFS269: GitOps - Continuous Delivery on Kubernetes with Flux</h3>
+                <h4>The Linux Foundation</h4>
+                <p class="date">Issued April 2022</p>
+                <a href="https://www.credly.com/badges/db4fabbb-e26e-49f7-b61a-37ea620791a9" target="_blank" class="project-link">View Certificate</a>
+            </div>
+            <div class="card">
+                <h3>LFS241: Monitoring Systems and Services with Prometheus</h3>
+                <h4>The Linux Foundation</h4>
+                <p class="date">Issued February 2022</p>
+                <a href="https://www.credly.com/badges/c6e405e6-4c25-448b-ab60-29d08aa689a0/public_url" target="_blank" class="project-link">View Certificate</a>
+            </div>
+            <div class="card">
+                <h3>CKAD: Certified Kubernetes Application Developer</h3>
+                <h4>The Linux Foundation</h4>
+                <p class="date">Issued December 2020 - Expired December 2023</p>
+                <a href="https://www.credly.com/badges/ed36c866-5b5b-4bb3-a2ea-53e7ad1adcb0" target="_blank" class="project-link">View Certificate</a>
+            </div>
+            <div class="card">
+                <h3>Certificate of Proficiency in English</h3>
+                <h4>University of Michigan</h4>
+                <p class="date">Issued December 2019</p>
+                <a href="https://drive.google.com/file/d/1jTH3pdS_TmBnZedvCRavpT13ZlY8uJ4L/view?pli=1" target="_blank" class="project-link">View Certificate</a>
+            </div>
+            <div class="card">
+                <h3>Zertifikat Deutsch Zeugnis B1</h3>
+                <h4>Goethe Institut e.V.</h4>
+                <p class="date">Issued February 2005</p>
+                <a href="https://drive.google.com/file/d/1NREQg8h2a4oIlRIXz5JHKjMAlxgN7q2f/view" target="_blank" class="project-link">View Certificate</a>
+            </div>
+    </section>
+
+    <section id="contact" class="tab-content">
+        <h2>Contact Information</h2>
+            <div class="contact-grid">
+                <div class="contact-item">
+                <strong>Email:</strong>
+                    <a href="mailto:dimoskatsimardos@protonmail.com">dimoskatsimardos@protonmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <strong>LinkedIn:</strong>
+                <a href="https://www.linkedin.com/in/dimostheniskatsimardos/" target="_blank">View Profile</a>
+                </div>
+                <div class="contact-item">
+                <strong>GitHub:</strong>
+                    <a href="https://github.com/dimkatsi91" target="_blank">View Profile</a>
+                </div>
+            <div class="contact-item">
+                <strong>Phone:</strong>
+                <span>+30 694 845 1865</span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Dimosthenis Katsimardos</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
